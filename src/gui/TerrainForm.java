@@ -34,7 +34,7 @@ import services.TerrainService;
 
 /**
  *
- * @author omare
+ * @author achref
  */
 public class TerrainForm extends Form{
     TerrainService ts = TerrainService.getInstance();

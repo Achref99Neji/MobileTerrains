@@ -23,7 +23,7 @@ import java.util.Map;
 
 /**
  *
- * @author omare
+ * @author achref
  */
 public class Terrain {
     

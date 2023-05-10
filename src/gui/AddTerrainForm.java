@@ -36,7 +36,7 @@ import services.TerrainService;
 
 /**
  *
- * @author omare
+ * @author achref
  */
 public class AddTerrainForm extends Form{
     
@@ -97,7 +97,7 @@ String fileName ="";
                     cr.addData("file", filePath, mime);
                 } catch (IOException ex) {
                 }
-                cr.setFilename("file", fileName);//any unique name you want
+                cr.setFilename("file", fileName);
 
                 cr.setUrl("http://127.0.0.1/imageServer.php");
                 cr.setPost(true);

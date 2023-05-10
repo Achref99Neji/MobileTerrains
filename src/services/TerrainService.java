@@ -28,7 +28,7 @@ import util.Statics;
 
 /**
  *
- * @author omare
+ * @author achref
  */
 public class TerrainService {
     ConnectionRequest req;
@@ -68,7 +68,7 @@ public class TerrainService {
     
     
     
-  /////////////////////ter  
+
  
 public boolean addTerrain(Terrain u) {
     String url = Statics.BASE_URL + "/mobile/addterrain?"
@@ -87,7 +87,7 @@ public boolean addTerrain(Terrain u) {
     req.addResponseListener(new ActionListener<NetworkEvent>() {
         @Override
         public void actionPerformed(NetworkEvent evt) {
-            resultOK = req.getResponseCode() == 200; // Code HTTP 200 OK
+            resultOK = req.getResponseCode() == 200;
             req.removeResponseListener(this);
         }
     });
@@ -112,7 +112,7 @@ public boolean modifierTerrain(Terrain u) {
     req.addResponseListener(new ActionListener<NetworkEvent>() {
         @Override
         public void actionPerformed(NetworkEvent evt) {
-            resultOK = req.getResponseCode() == 200; // Code HTTP 200 OK
+            resultOK = req.getResponseCode() == 200; 
             req.removeResponseListener(this);
         }
     });
@@ -126,7 +126,7 @@ public boolean modifierTerrain(Terrain u) {
     req.addResponseListener(new ActionListener<NetworkEvent>() {
         @Override
         public void actionPerformed(NetworkEvent evt) {
-            resultOK = req.getResponseCode() == 200; //Code HTTP 200 OK
+            resultOK = req.getResponseCode() == 200; 
             req.removeResponseListener(this);
         }
     });
@@ -141,7 +141,7 @@ public boolean modifierTerrain(Terrain u) {
     req.addResponseListener(new ActionListener<NetworkEvent>() {
         @Override
         public void actionPerformed(NetworkEvent evt) {
-            resultOK = req.getResponseCode() == 200; //Code HTTP 200 OK
+            resultOK = req.getResponseCode() == 200; 
             req.removeResponseListener(this);
         }
     });
